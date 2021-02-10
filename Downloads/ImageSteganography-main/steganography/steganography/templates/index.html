@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Steganography</title>
+    <style>
+        div {
+            background-color: #4472c4;
+            width: 500px;
+            padding: 50px;
+            margin: auto;
+            position: relative;
+            border-style: solid;
+            border-bottom: 2px solid black;
+        }
+
+        p {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        input[type=text] {
+            background-color: transparent;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid white;
+        }
+
+        input[type=submit] {
+            margin: 0;
+            position: absolute;
+            width: 100px;
+            top: 80%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            border: 1px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <form action="/validate" style="align-content: center" method="post">
+
+            <p>Encode Your Message</p>
+            <p>
+                <label>Username
+                    <input type="text" name="username">
+                </label>
+            </p>
+            <p>
+                <label>Password
+                    <input type="password" name="password">
+                </label>
+            </p>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+
+</html>
